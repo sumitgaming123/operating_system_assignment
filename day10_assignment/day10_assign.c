@@ -13,7 +13,7 @@
 typedef struct msg {
 	long type;
 	char data[32];
-} msg_t;
+} msg_t;			//structure creadted of name msg_t
 
 int main() {
 	int mqid, ret, s;
@@ -28,7 +28,7 @@ int main() {
 	ret = fork();
 	if (ret == 0) {
 		// child: send two numbers to the parent
-		msg_t m1;
+		msg_t m1;			//structure variable m1 is create. 
 		m1.type = 1;
 
 		int num1, num2;
